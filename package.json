@@ -1,0 +1,17 @@
+{
+  "name": "simple-queue-service",
+  "version": "0.1.0",
+  "description": "In this app, clients may create simple queues.",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarsislimadev/simple-queue-service.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tarsislimadev/simple-queue-service/issues"
+  },
+  "homepage": "https://github.com/tarsislimadev/simple-queue-service#readme"
+}
