@@ -11,19 +11,16 @@ class Page extends PageElements {
   setEvents() {
     super.setEvents()
 
-    this.peer.on('connection', (event) => {
-      console.log('peer.connection', (event))
-    })
-
     window.addEventListener(PeerOpenEvent.NAME, (event) => {
       console.log(PeerOpenEvent.NAME, (event))
 
-      this.qrcode = this.createQrCode(event.detail.open)
+      this.queue_id = this.getUrlId()
+      this.peer.conect(this.queue_id)
     })
   }
 
-  createQrCode() {
-    
+  getUrlId() {
+    return new URL(window.location).searchParams.get('id')
   }
 }
 
